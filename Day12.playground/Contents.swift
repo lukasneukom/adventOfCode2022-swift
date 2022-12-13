@@ -163,11 +163,11 @@ func partTwo(puzzleInput: String) -> String {
     return "\(path.count)"
 }
 
-//let testResultOne = partOne(puzzleInput: testInput)
-//testResultOne == expectedResultOne ? print("Passed first test") : print("Failed first test, expected \"\(expectedResultOne)\" but got \"\(testResultOne)\"")
-//
-//let resultOne = partOne(puzzleInput: puzzleInput)
-//print("Frist result should be: \"\(resultOne)\"")
+let testResultOne = partOne(puzzleInput: testInput)
+testResultOne == expectedResultOne ? print("Passed first test") : print("Failed first test, expected \"\(expectedResultOne)\" but got \"\(testResultOne)\"")
+
+let resultOne = partOne(puzzleInput: puzzleInput)
+print("Frist result should be: \"\(resultOne)\"")
 
 let testResultTwo = partTwo(puzzleInput: testInput)
 testResultTwo == expectedResultTwo ? print("Passed second test") : print("Failed second test, expected \"\(expectedResultTwo)\" but got \"\(testResultTwo)\"")

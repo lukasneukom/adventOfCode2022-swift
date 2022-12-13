@@ -53,16 +53,12 @@ func compare(_ leftPacket: [Any], _ rightPacket: [Any]) -> Bool? {
         case (true, true):
             if (leftPacket[i] as! Int) > (rightPacket[i] as! Int) { return false }
             if (leftPacket[i] as! Int) < (rightPacket[i] as! Int) { return true }
-            continue
         case (true, false):
             if let correctOrder = compare([leftPacket[i]], rightPacket[i] as! [Any]) { return correctOrder }
-            continue
         case (false, true):
             if let correctOrder = compare(leftPacket[i] as! [Any], [rightPacket[i]]) { return correctOrder }
-            continue
         case (false, false):
             if let correctOrder = compare(leftPacket[i] as! [Any], rightPacket[i] as! [Any]) { return correctOrder }
-            continue
         }
     }
     if leftPacket.count < rightPacket.count { return true }

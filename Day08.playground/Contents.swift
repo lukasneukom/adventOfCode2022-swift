@@ -115,5 +115,3 @@ for i in 0..<mapHeight {
 }
 
 print("best scenic view has a score of \(maxScenicView)")
-
-
